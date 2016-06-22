@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xecdapi.xe.com/v1/convert_from.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic Ymxvb21zb2x1dGlvbnMxNjI4NjQwMzc6MWFlbHJmZ3VkbGsybTZwanFxY2dwZmkxbnA=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - 5fc75084-a849-4f02-a983-02dd7cf10f7d
+      Last-Modified:
+      - Wed, 22 Jun 2016 01:39:16 UTC
+      X-Ratelimit-Limit:
+      - '900'
+      X-Ratelimit-Remaining:
+      - '899'
+      X-Ratelimit-Reset:
+      - '1466559900'
+      Content-Length:
+      - '146'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"USD","amount":1.0,"timestamp":"2016-06-22T01:39:00Z"}'
+    http_version: 
+  recorded_at: Wed, 22 Jun 2016 01:39:21 GMT
+- request:
+    method: get
+    uri: https://xecdapi.xe.com/v1/convert_from.json?amount=201.52&from=USD&to=PHP,KRW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic Ymxvb21zb2x1dGlvbnMxNjI4NjQwMzc6MWFlbHJmZ3VkbGsybTZwanFxY2dwZmkxbnA=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - dffdaa57-b4e5-4198-82fd-279b0fc8195c
+      Last-Modified:
+      - Wed, 22 Jun 2016 01:44:18 UTC
+      X-Ratelimit-Limit:
+      - '900'
+      X-Ratelimit-Remaining:
+      - '898'
+      X-Ratelimit-Reset:
+      - '1466559900'
+      Content-Length:
+      - '250'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"USD","amount":201.52,"timestamp":"2016-06-22T01:44:00Z","to":[{"quotecurrency":"PHP","mid":9000.0},{"quotecurrency":"KRW","mid":230000.11111}]}'
+    http_version: 
+  recorded_at: Wed, 22 Jun 2016 01:44:51 GMT
+recorded_with: VCR 3.0.3

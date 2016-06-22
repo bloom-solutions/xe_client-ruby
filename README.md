@@ -1,4 +1,4 @@
-# XeClient
+# XEClient
 
 Ruby wrapper for XE's REST API.
 

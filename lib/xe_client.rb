@@ -1,5 +1,5 @@
 require "xe_client/version"
 
-module XeClient
+module XEClient
   # Your code goes here...
 end

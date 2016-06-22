@@ -5,7 +5,7 @@ require 'xe_client/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "xe_client"
-  spec.version       = XeClient::VERSION
+  spec.version       = XEClient::VERSION
   spec.authors       = ["Ramon Tayag"]
   spec.email         = ["ramon.tayag@gmail.com"]
 

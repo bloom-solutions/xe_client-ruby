@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.2.0] - 2016-06-30
 ### Added
 - Raise XEClient::AuthenticationError when there's an auth issue
 - Raise XEClient::Error for all other errors

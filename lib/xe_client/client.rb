@@ -18,7 +18,7 @@ module XEClient
         amount: amount,
       )
       raw_response = ConvertFromRequest.(args)
-      ConvertFromResponse.new(raw_response: raw_response)
+      ConvertFromResponse.(raw_response)
     end
 
     private

@@ -3,7 +3,6 @@ module XEClient
 
     attribute :from, String, lazy: true, default: :default_from
     attribute :to, Array, lazy: true, default: :default_to
-    attribute :raw_response, IndifferentHash
 
     private
 

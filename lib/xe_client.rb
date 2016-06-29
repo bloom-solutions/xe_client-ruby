@@ -10,6 +10,8 @@ require "xe_client/requests/base_request"
 require "xe_client/requests/convert_from_request"
 require "xe_client/responses/base_response"
 require "xe_client/responses/convert_from_response"
+require "xe_client/errors/error"
+require "xe_client/errors/authentication_error"
 
 module XEClient
 

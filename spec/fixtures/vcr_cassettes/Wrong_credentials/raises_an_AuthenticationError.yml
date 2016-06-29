@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xecdapi.xe.com/v1/convert_from.json?amount=3.0&from=USD&to=IDR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic YXNkOmRzYQ==
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Www-Authenticate:
+      - Basic realm="Please enter your Account ID and API Key into the User Name and
+        Password fields below"
+      Content-Length:
+      - '92'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":1,"message":"Bad credentials","documentation_url":"https://xecdapi.xe.com/docs/v1/"}'
+    http_version: 
+  recorded_at: Wed, 29 Jun 2016 09:53:39 GMT
+recorded_with: VCR 3.0.3

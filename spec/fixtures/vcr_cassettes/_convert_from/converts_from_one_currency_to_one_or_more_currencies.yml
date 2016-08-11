@@ -25,22 +25,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - 6ed22934-463c-4ae4-b283-3d7dc16ddf6b
+      - 67a3b89c-8f51-4d47-b661-d7ea4f4202b9
       Last-Modified:
-      - Tue, 28 Jun 2016 02:45:16 UTC
+      - Thu, 11 Aug 2016 01:30:20 UTC
       X-Ratelimit-Limit:
       - '900'
       X-Ratelimit-Remaining:
       - '899'
       X-Ratelimit-Reset:
-      - '1467081960'
+      - '1470879900'
       Content-Length:
       - '249'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"USD","amount":201.52,"timestamp":"2016-06-28T02:45:00Z","to":[{"quotecurrency":"PHP","mid":9509.746599736},{"quotecurrency":"KRW","mid":236656.3353531719}]}'
+      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"USD","amount":201.52,"timestamp":"2016-08-11T01:30:00Z","to":[{"quotecurrency":"PHP","mid":9414.5829390505},{"quotecurrency":"KRW","mid":221201.673707476}]}'
     http_version: 
-  recorded_at: Tue, 28 Jun 2016 02:45:40 GMT
+  recorded_at: Thu, 11 Aug 2016 01:30:37 GMT
 recorded_with: VCR 3.0.3

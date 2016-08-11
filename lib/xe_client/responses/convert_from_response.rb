@@ -7,11 +7,11 @@ module XEClient
     private
 
     def default_from
-      raw_response[:from]
+      response_body[:from]
     end
 
     def default_to
-      raw_response[:to].map do |quote_hash|
+      response_body[:to].map do |quote_hash|
         Quote.new(quote_hash)
       end
     end

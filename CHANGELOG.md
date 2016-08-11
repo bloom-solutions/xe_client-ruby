@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- Fix issue when accessing ConvertFromResponse#to and error was raised
+
 ## [0.2.0] - 2016-06-30
 ### Added
 - Raise XEClient::AuthenticationError when there's an auth issue

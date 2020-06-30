@@ -1,30 +1,17 @@
 module XEClient
   class Client
 
-    DEFAULT_URL = "https://xecdapi.xe.com"
-
-    include Virtus.model
+    include APIClientBase::Client.module(default_opts: :default_opts)
+    attribute :host, String
     attribute :account_id, String
     attribute :api_key, String
-    attribute :url, String, default: DEFAULT_URL
 
-    include ActiveModel::Validations
-    validates :account_id, :api_key, presence: true
-
-    def convert_from(base_currency, counter_currencies, amount)
-      args = default_args.merge(
-        base_currency: base_currency,
-        counter_currencies: counter_currencies,
-        amount: amount,
-      )
-      raw_response = ConvertFromRequest.(args)
-      ConvertFromResponse.(raw_response)
-    end
+    api_action :convert_from
 
     private
 
-    def default_args
-      attributes.slice(:account_id, :api_key, :url)
+    def default_opts
+      { host: host, account_id: account_id, api_key: api_key }
     end
 
   end

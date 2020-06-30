@@ -16,14 +16,6 @@ describe XEClient do
         expect(client.api_key).to eq CONFIG[:api_key]
       end
     end
-
-    context "validations not passed" do
-      let(:client) { described_class.new(CONFIG.slice(:account_id)) }
-
-      it "creates a new XEClient::Client" do
-        expect { client }.to raise_error(ArgumentError)
-      end
-    end
   end
 
 end

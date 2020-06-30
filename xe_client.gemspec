@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ramon.tayag@gmail.com"]
 
   spec.summary       = %q{Ruby wrapper for XE's REST API}
-  spec.homepage      = "https://github.com/imacchiato/xe_client-ruby"
+  spec.homepage      = "https://github.com/bloom-solutions/xe_client-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

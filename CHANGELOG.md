@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.0.0] - 2020-06-30
 ### Changed
 - Changed `url` to `host` fot the XE API host (defaults to https://xecdapi.xe.com)
 - Changed `#convert_from` to accept keyword args named more like the API's param names:

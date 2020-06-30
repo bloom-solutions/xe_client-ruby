@@ -1,1 +1,1 @@
-require "virtus-matchers"
+require "virtus/matchers/rspec"

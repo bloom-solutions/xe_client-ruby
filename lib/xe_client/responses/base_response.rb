@@ -1,7 +1,7 @@
 module XEClient
   class BaseResponse
 
-    include Virtus.model
+    include APIClientBase::Response.module
     attribute :raw_response
     attribute(:response_body, IndifferentHash, {
       lazy: true,
@@ -10,12 +10,6 @@ module XEClient
     attribute :code, Integer, lazy: true, default: :default_code
     attribute :message, String, lazy: true, default: :default_message
     attribute :error, Object, lazy: true, default: :default_error
-
-    def self.call(raw_response)
-      response = self.new(raw_response: raw_response)
-      raise response.error if response.error.present?
-      response
-    end
 
     private
 
@@ -33,6 +27,10 @@ module XEClient
 
     def default_response_body
       JSON.parse(raw_response.body)
+    end
+
+    def default_success
+      error.blank?
     end
 
   end

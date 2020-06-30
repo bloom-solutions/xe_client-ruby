@@ -5,8 +5,10 @@ module XEClient
 
     it "raises an AuthenticationError", vcr: {record: :once} do
       client = XEClient.new(account_id: "asd", api_key: "dsa")
-      expect { client.convert_from("USD", %w(IDR), 3.0) }.
-        to raise_error(AuthenticationError)
+      response = client.convert_from(from: "USD", to: %w(IDR), amount: 3.0)
+
+      expect(response).to_not be_success
+      expect(response.error).to be_a AuthenticationError
     end
 
   end

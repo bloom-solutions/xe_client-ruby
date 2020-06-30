@@ -12,40 +12,39 @@ module XEClient
       it { is_expected.to have_attribute(:error) }
     end
 
-    describe ".call" do
-      context "there is an error, and error is not mapped" do
-        let(:raw_response) do
-          instance_double(HTTParty::Response, {
-            body: {code: 2, message: "My message"}.to_json,
-          })
-        end
-
-        it "raises an error" do
-          expect { described_class.(raw_response) }.
-            to raise_error(Error, "My message")
-        end
+    context "there is an error, and error is not mapped" do
+      let(:raw_response) do
+        instance_double(Typhoeus::Response, {
+          body: {code: 2, message: "My message"}.to_json,
+        })
       end
+      let(:response) { described_class.new(raw_response: raw_response) }
 
-      context "there is an error, and error is mapped" do
-        let(:raw_response) do
-          instance_double(HTTParty::Response, {
-            body: {code: 1, message: "My message"}.to_json,
-          })
-        end
+      it "is not successful" do
+        expect(response).to_not be_success
+        expect(response.error).to be_a Error
+      end
+    end
 
-        it "raises an error" do
-          expect { described_class.(raw_response) }.
-            to raise_error(AuthenticationError, "My message")
-        end
+    context "there is an error, and error is mapped" do
+      let(:raw_response) do
+        instance_double(Typhoeus::Response, {
+          body: {code: 1, message: "My message"}.to_json,
+        })
+      end
+      let(:response) { described_class.new(raw_response: raw_response) }
+
+      it "raises an error" do
+        expect(response).to_not be_success
+        expect(response.error).to be_a AuthenticationError
+        expect(response.error.message).to eq "My message"
       end
     end
 
     describe "#response_body" do
-      let(:response) do
-        described_class.new(raw_response: raw_response)
-      end
+      let(:response) { described_class.new(raw_response: raw_response) }
       let(:raw_response) do
-        instance_double(HTTParty::Response, body: {amount: 1.0}.to_json)
+        instance_double(Typhoeus::Response, body: {amount: 1.0}.to_json)
       end
 
       it "is the raw_response's body in indifferent hash version" do

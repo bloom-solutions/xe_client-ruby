@@ -30,6 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activemodel", ">= 3.0"
   spec.add_dependency "virtus", "~> 1.0"
   spec.add_dependency "httparty"
+  spec.add_dependency "api_client_base", "~> 1.8"
+  spec.add_dependency "dry-validation", "< 1.0"
+  spec.add_dependency "typhoeus", "~> 1.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"

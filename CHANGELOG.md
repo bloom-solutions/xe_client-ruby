@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- `#historic_rate_period`: Do not blow up if no rates
+
 ## [1.0.0] - 2020-06-30
 ### Changed
 - Changed `url` to `host` fot the XE API host (defaults to https://xecdapi.xe.com)

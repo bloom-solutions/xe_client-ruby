@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xecdapi.xe.com/v1/historic_rate/period.json?end_timestamp=2018-12-01T23:59:59%2B00:00&from=PHP&interval=daily&page=6&per_page=100&start_timestamp=2018-01-01T00:00:00%2B00:00&to=USD,KRW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Authorization:
+      - Basic <auth_header>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 30 Jun 2020 06:25:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '111'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '900'
+      X-Ratelimit-Remaining:
+      - '899'
+      X-Ratelimit-Reset:
+      - '1593498600'
+      X-Raterequest-Limit:
+      - '10000'
+      X-Raterequest-Remaining:
+      - '7766'
+      X-Raterequest-Reset:
+      - '1593561600'
+    body:
+      encoding: UTF-8
+      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"PHP","amount":1.0}'
+    http_version: 
+  recorded_at: Tue, 30 Jun 2020 06:25:58 GMT
+- request:
+    method: get
+    uri: https://xecdapi.xe.com/v1/historic_rate/period.json?end_timestamp=2018-12-01T23:59:59%2B00:00&from=PHP&interval=daily&page=1&per_page=100&start_timestamp=2018-01-01T00:00:00%2B00:00&to=USD,KRW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Authorization:
+      - Basic <auth_header>
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 30 Jun 2020 06:27:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11416'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '900'
+      X-Ratelimit-Remaining:
+      - '898'
+      X-Ratelimit-Reset:
+      - '1593498600'
+      X-Raterequest-Limit:
+      - '10000'
+      X-Raterequest-Remaining:
+      - '7766'
+      X-Raterequest-Reset:
+      - '1593561600'
+    body:
+      encoding: UTF-8
+      string: '{"terms":"http://www.xe.com/legal/dfs.php","privacy":"http://www.xe.com/privacy.php","from":"PHP","amount":1.0,"to":{"KRW":[{"mid":21.3228317122,"timestamp":"2018-01-01T00:00:00Z"},{"mid":21.3126357503,"timestamp":"2018-01-02T00:00:00Z"},{"mid":21.3087527086,"timestamp":"2018-01-03T00:00:00Z"},{"mid":21.3711047317,"timestamp":"2018-01-04T00:00:00Z"},{"mid":21.2929106066,"timestamp":"2018-01-05T00:00:00Z"},{"mid":21.3098912701,"timestamp":"2018-01-06T00:00:00Z"},{"mid":21.3104756135,"timestamp":"2018-01-07T00:00:00Z"},{"mid":21.3043624043,"timestamp":"2018-01-08T00:00:00Z"},{"mid":21.2854020188,"timestamp":"2018-01-09T00:00:00Z"},{"mid":21.2997372665,"timestamp":"2018-01-10T00:00:00Z"},{"mid":21.1767139655,"timestamp":"2018-01-11T00:00:00Z"},{"mid":21.174983068,"timestamp":"2018-01-12T00:00:00Z"},{"mid":21.0204999358,"timestamp":"2018-01-13T00:00:00Z"},{"mid":21.0261934356,"timestamp":"2018-01-14T00:00:00Z"},{"mid":20.9828473979,"timestamp":"2018-01-15T00:00:00Z"},{"mid":21.0919006862,"timestamp":"2018-01-16T00:00:00Z"},{"mid":21.0200149736,"timestamp":"2018-01-17T00:00:00Z"},{"mid":21.0320102688,"timestamp":"2018-01-18T00:00:00Z"},{"mid":21.0702078776,"timestamp":"2018-01-19T00:00:00Z"},{"mid":21.0432085412,"timestamp":"2018-01-20T00:00:00Z"},{"mid":21.0341339177,"timestamp":"2018-01-21T00:00:00Z"},{"mid":21.014200145,"timestamp":"2018-01-22T00:00:00Z"},{"mid":20.9654728918,"timestamp":"2018-01-23T00:00:00Z"},{"mid":21.0029193439,"timestamp":"2018-01-24T00:00:00Z"},{"mid":20.9474687941,"timestamp":"2018-01-25T00:00:00Z"},{"mid":20.9432483275,"timestamp":"2018-01-26T00:00:00Z"},{"mid":20.8789059512,"timestamp":"2018-01-27T00:00:00Z"},{"mid":20.8726411648,"timestamp":"2018-01-28T00:00:00Z"},{"mid":20.8531378091,"timestamp":"2018-01-29T00:00:00Z"},{"mid":20.8307242753,"timestamp":"2018-01-30T00:00:00Z"},{"mid":20.8486357473,"timestamp":"2018-01-31T00:00:00Z"},{"mid":20.8086683083,"timestamp":"2018-02-01T00:00:00Z"},{"mid":20.7693428901,"timestamp":"2018-02-02T00:00:00Z"},{"mid":21.0772228698,"timestamp":"2018-02-03T00:00:00Z"},{"mid":21.0679008734,"timestamp":"2018-02-04T00:00:00Z"},{"mid":21.1157797023,"timestamp":"2018-02-05T00:00:00Z"},{"mid":21.2514922072,"timestamp":"2018-02-06T00:00:00Z"},{"mid":20.9772092092,"timestamp":"2018-02-07T00:00:00Z"},{"mid":21.2883906557,"timestamp":"2018-02-08T00:00:00Z"},{"mid":21.1990630743,"timestamp":"2018-02-09T00:00:00Z"},{"mid":21.0035853347,"timestamp":"2018-02-10T00:00:00Z"},{"mid":21.0009405509,"timestamp":"2018-02-11T00:00:00Z"},{"mid":20.9811977575,"timestamp":"2018-02-12T00:00:00Z"},{"mid":20.8384304642,"timestamp":"2018-02-13T00:00:00Z"},{"mid":20.8224054955,"timestamp":"2018-02-14T00:00:00Z"},{"mid":20.5269721959,"timestamp":"2018-02-15T00:00:00Z"},{"mid":20.3483334862,"timestamp":"2018-02-16T00:00:00Z"},{"mid":20.4086895911,"timestamp":"2018-02-17T00:00:00Z"},{"mid":20.3958694336,"timestamp":"2018-02-18T00:00:00Z"},{"mid":20.4098856426,"timestamp":"2018-02-19T00:00:00Z"},{"mid":20.4011552481,"timestamp":"2018-02-20T00:00:00Z"},{"mid":20.5192023485,"timestamp":"2018-02-21T00:00:00Z"},{"mid":20.6321934565,"timestamp":"2018-02-22T00:00:00Z"},{"mid":20.805937107,"timestamp":"2018-02-23T00:00:00Z"},{"mid":20.7772932776,"timestamp":"2018-02-24T00:00:00Z"},{"mid":20.7627689733,"timestamp":"2018-02-25T00:00:00Z"},{"mid":20.7796869887,"timestamp":"2018-02-26T00:00:00Z"},{"mid":20.6377416791,"timestamp":"2018-02-27T00:00:00Z"},{"mid":20.6724295671,"timestamp":"2018-02-28T00:00:00Z"},{"mid":20.8225344427,"timestamp":"2018-03-01T00:00:00Z"},{"mid":20.8831567739,"timestamp":"2018-03-02T00:00:00Z"},{"mid":20.7713140999,"timestamp":"2018-03-03T00:00:00Z"},{"mid":20.7555186027,"timestamp":"2018-03-04T00:00:00Z"},{"mid":20.7860761188,"timestamp":"2018-03-05T00:00:00Z"},{"mid":20.7364004391,"timestamp":"2018-03-06T00:00:00Z"},{"mid":20.4551814603,"timestamp":"2018-03-07T00:00:00Z"},{"mid":20.4975652259,"timestamp":"2018-03-08T00:00:00Z"},{"mid":20.5891348715,"timestamp":"2018-03-09T00:00:00Z"},{"mid":20.4936918135,"timestamp":"2018-03-10T00:00:00Z"},{"mid":20.4765020746,"timestamp":"2018-03-11T00:00:00Z"},{"mid":20.4765423255,"timestamp":"2018-03-12T00:00:00Z"},{"mid":20.4556984071,"timestamp":"2018-03-13T00:00:00Z"},{"mid":20.5046894831,"timestamp":"2018-03-14T00:00:00Z"},{"mid":20.4351676804,"timestamp":"2018-03-15T00:00:00Z"},{"mid":20.4988093552,"timestamp":"2018-03-16T00:00:00Z"},{"mid":20.6027143642,"timestamp":"2018-03-17T00:00:00Z"},{"mid":20.5975940126,"timestamp":"2018-03-18T00:00:00Z"},{"mid":20.6202096244,"timestamp":"2018-03-19T00:00:00Z"},{"mid":20.5844261216,"timestamp":"2018-03-20T00:00:00Z"},{"mid":20.5353675074,"timestamp":"2018-03-21T00:00:00Z"},{"mid":20.4096166578,"timestamp":"2018-03-22T00:00:00Z"},{"mid":20.6037210045,"timestamp":"2018-03-23T00:00:00Z"},{"mid":20.6787703794,"timestamp":"2018-03-24T00:00:00Z"},{"mid":20.6703085703,"timestamp":"2018-03-25T00:00:00Z"},{"mid":20.6720282355,"timestamp":"2018-03-26T00:00:00Z"},{"mid":20.5620865722,"timestamp":"2018-03-27T00:00:00Z"},{"mid":20.4972745641,"timestamp":"2018-03-28T00:00:00Z"},{"mid":20.3485613506,"timestamp":"2018-03-29T00:00:00Z"},{"mid":20.3415263074,"timestamp":"2018-03-30T00:00:00Z"},{"mid":20.3180519293,"timestamp":"2018-03-31T00:00:00Z"},{"mid":20.315745246,"timestamp":"2018-04-01T00:00:00Z"},{"mid":20.352267692,"timestamp":"2018-04-02T00:00:00Z"},{"mid":20.2757904456,"timestamp":"2018-04-03T00:00:00Z"},{"mid":20.2622654144,"timestamp":"2018-04-04T00:00:00Z"},{"mid":20.2896227882,"timestamp":"2018-04-05T00:00:00Z"},{"mid":20.4056716893,"timestamp":"2018-04-06T00:00:00Z"},{"mid":20.5666584742,"timestamp":"2018-04-07T00:00:00Z"},{"mid":20.5602186684,"timestamp":"2018-04-08T00:00:00Z"},{"mid":20.5658565843,"timestamp":"2018-04-09T00:00:00Z"},{"mid":20.5472924008,"timestamp":"2018-04-10T00:00:00Z"}],"USD":[{"mid":0.0199976857,"timestamp":"2018-01-01T00:00:00Z"},{"mid":0.0199918152,"timestamp":"2018-01-02T00:00:00Z"},{"mid":0.0200371669,"timestamp":"2018-01-03T00:00:00Z"},{"mid":0.0200726068,"timestamp":"2018-01-04T00:00:00Z"},{"mid":0.0200495691,"timestamp":"2018-01-05T00:00:00Z"},{"mid":0.0200643297,"timestamp":"2018-01-06T00:00:00Z"},{"mid":0.0200642,"timestamp":"2018-01-07T00:00:00Z"},{"mid":0.0200806628,"timestamp":"2018-01-08T00:00:00Z"},{"mid":0.019924122,"timestamp":"2018-01-09T00:00:00Z"},{"mid":0.0198572376,"timestamp":"2018-01-10T00:00:00Z"},{"mid":0.0197825494,"timestamp":"2018-01-11T00:00:00Z"},{"mid":0.0198666235,"timestamp":"2018-01-12T00:00:00Z"},{"mid":0.0198524576,"timestamp":"2018-01-13T00:00:00Z"},{"mid":0.0198524642,"timestamp":"2018-01-14T00:00:00Z"},{"mid":0.0198705492,"timestamp":"2018-01-15T00:00:00Z"},{"mid":0.0198478608,"timestamp":"2018-01-16T00:00:00Z"},{"mid":0.0197700178,"timestamp":"2018-01-17T00:00:00Z"},{"mid":0.019704342,"timestamp":"2018-01-18T00:00:00Z"},{"mid":0.0196871612,"timestamp":"2018-01-19T00:00:00Z"},{"mid":0.0197092599,"timestamp":"2018-01-20T00:00:00Z"},{"mid":0.0197095075,"timestamp":"2018-01-21T00:00:00Z"},{"mid":0.0197038738,"timestamp":"2018-01-22T00:00:00Z"},{"mid":0.0196020049,"timestamp":"2018-01-23T00:00:00Z"},{"mid":0.019564912,"timestamp":"2018-01-24T00:00:00Z"},{"mid":0.0196657673,"timestamp":"2018-01-25T00:00:00Z"},{"mid":0.0196547437,"timestamp":"2018-01-26T00:00:00Z"},{"mid":0.0196231696,"timestamp":"2018-01-27T00:00:00Z"},{"mid":0.019623216,"timestamp":"2018-01-28T00:00:00Z"},{"mid":0.0196106468,"timestamp":"2018-01-29T00:00:00Z"},{"mid":0.0194572189,"timestamp":"2018-01-30T00:00:00Z"},{"mid":0.0194230717,"timestamp":"2018-01-31T00:00:00Z"},{"mid":0.0194519208,"timestamp":"2018-02-01T00:00:00Z"},{"mid":0.019375577,"timestamp":"2018-02-02T00:00:00Z"},{"mid":0.0193444324,"timestamp":"2018-02-03T00:00:00Z"},{"mid":0.0193444323,"timestamp":"2018-02-04T00:00:00Z"},{"mid":0.0193625382,"timestamp":"2018-02-05T00:00:00Z"},{"mid":0.0194223868,"timestamp":"2018-02-06T00:00:00Z"},{"mid":0.0194211834,"timestamp":"2018-02-07T00:00:00Z"},{"mid":0.0195270222,"timestamp":"2018-02-08T00:00:00Z"},{"mid":0.0193291704,"timestamp":"2018-02-09T00:00:00Z"},{"mid":0.0193621138,"timestamp":"2018-02-10T00:00:00Z"},{"mid":0.0193621377,"timestamp":"2018-02-11T00:00:00Z"},{"mid":0.0193629008,"timestamp":"2018-02-12T00:00:00Z"},{"mid":0.0192403552,"timestamp":"2018-02-13T00:00:00Z"},{"mid":0.0192026288,"timestamp":"2018-02-14T00:00:00Z"},{"mid":0.0191781248,"timestamp":"2018-02-15T00:00:00Z"},{"mid":0.0191332581,"timestamp":"2018-02-16T00:00:00Z"},{"mid":0.0191271555,"timestamp":"2018-02-17T00:00:00Z"},{"mid":0.0191270819,"timestamp":"2018-02-18T00:00:00Z"},{"mid":0.0191477781,"timestamp":"2018-02-19T00:00:00Z"},{"mid":0.0191140603,"timestamp":"2018-02-20T00:00:00Z"},{"mid":0.0191228892,"timestamp":"2018-02-21T00:00:00Z"},{"mid":0.0191859911,"timestamp":"2018-02-22T00:00:00Z"},{"mid":0.0192502504,"timestamp":"2018-02-23T00:00:00Z"},{"mid":0.0192960668,"timestamp":"2018-02-24T00:00:00Z"},{"mid":0.019295933,"timestamp":"2018-02-25T00:00:00Z"},{"mid":0.0192958173,"timestamp":"2018-02-26T00:00:00Z"},{"mid":0.0192834056,"timestamp":"2018-02-27T00:00:00Z"},{"mid":0.019125078,"timestamp":"2018-02-28T00:00:00Z"},{"mid":0.0191764158,"timestamp":"2018-03-01T00:00:00Z"},{"mid":0.0192916052,"timestamp":"2018-03-02T00:00:00Z"},{"mid":0.0192401188,"timestamp":"2018-03-03T00:00:00Z"},{"mid":0.0192407184,"timestamp":"2018-03-04T00:00:00Z"},{"mid":0.0192518401,"timestamp":"2018-03-05T00:00:00Z"},{"mid":0.0192529001,"timestamp":"2018-03-06T00:00:00Z"},{"mid":0.0192314333,"timestamp":"2018-03-07T00:00:00Z"},{"mid":0.0192161358,"timestamp":"2018-03-08T00:00:00Z"},{"mid":0.0191712026,"timestamp":"2018-03-09T00:00:00Z"},{"mid":0.0192381215,"timestamp":"2018-03-10T00:00:00Z"},{"mid":0.019237954,"timestamp":"2018-03-11T00:00:00Z"},{"mid":0.0192356917,"timestamp":"2018-03-12T00:00:00Z"},{"mid":0.0192193407,"timestamp":"2018-03-13T00:00:00Z"},{"mid":0.0192208738,"timestamp":"2018-03-14T00:00:00Z"},{"mid":0.0192228581,"timestamp":"2018-03-15T00:00:00Z"},{"mid":0.0191718419,"timestamp":"2018-03-16T00:00:00Z"},{"mid":0.0192593536,"timestamp":"2018-03-17T00:00:00Z"},{"mid":0.019258547,"timestamp":"2018-03-18T00:00:00Z"},{"mid":0.0192590404,"timestamp":"2018-03-19T00:00:00Z"},{"mid":0.0191887651,"timestamp":"2018-03-20T00:00:00Z"},{"mid":0.0191763574,"timestamp":"2018-03-21T00:00:00Z"},{"mid":0.0191730788,"timestamp":"2018-03-22T00:00:00Z"},{"mid":0.0190712301,"timestamp":"2018-03-23T00:00:00Z"},{"mid":0.0190876229,"timestamp":"2018-03-24T00:00:00Z"},{"mid":0.0190878068,"timestamp":"2018-03-25T00:00:00Z"},{"mid":0.019088337,"timestamp":"2018-03-26T00:00:00Z"},{"mid":0.0191317601,"timestamp":"2018-03-27T00:00:00Z"},{"mid":0.0190787172,"timestamp":"2018-03-28T00:00:00Z"},{"mid":0.0191235808,"timestamp":"2018-03-29T00:00:00Z"},{"mid":0.0191470939,"timestamp":"2018-03-30T00:00:00Z"},{"mid":0.0191571788,"timestamp":"2018-03-31T00:00:00Z"},{"mid":0.0191584461,"timestamp":"2018-04-01T00:00:00Z"},{"mid":0.0191771249,"timestamp":"2018-04-02T00:00:00Z"},{"mid":0.0191716602,"timestamp":"2018-04-03T00:00:00Z"},{"mid":0.0192232641,"timestamp":"2018-04-04T00:00:00Z"},{"mid":0.0191786631,"timestamp":"2018-04-05T00:00:00Z"},{"mid":0.0192149898,"timestamp":"2018-04-06T00:00:00Z"},{"mid":0.0192196808,"timestamp":"2018-04-07T00:00:00Z"},{"mid":0.0192196849,"timestamp":"2018-04-08T00:00:00Z"},{"mid":0.0192009395,"timestamp":"2018-04-09T00:00:00Z"},{"mid":0.0192142883,"timestamp":"2018-04-10T00:00:00Z"}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Jun 2020 06:27:43 GMT
+recorded_with: VCR 3.0.3

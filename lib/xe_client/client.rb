@@ -7,6 +7,7 @@ module XEClient
     attribute :api_key, String
 
     api_action :convert_from
+    api_action :historic_rate_period
 
     private
 

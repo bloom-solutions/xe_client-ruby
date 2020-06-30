@@ -4,6 +4,7 @@ module XEClient
     include Virtus.model
     attribute :quotecurrency, String
     attribute :mid, Float
+    attribute :timestamp, DateTime
 
   end
 end

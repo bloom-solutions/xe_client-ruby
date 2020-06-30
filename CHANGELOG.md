@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   - `to` instead of the second argument aka `counter_currencies`
   - `amount` instead of the third argument
 - No longer raise exception when XE's response contains an error. Developer should use `#success?` on the response instead and inspect `#error` to see details.
+### Added
+- `historic_rate_period` call to get historic rates over a period
 
 ## [0.2.1] - 2016-08-11
 ### Fixed

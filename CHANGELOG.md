@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Update `dry-validation` to 1.x
+
 ## [1.0.1] - 2020-06-30
 ### Fixed
 - `#historic_rate_period`: Do not blow up if no rates

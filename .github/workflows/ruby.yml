@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7']
+        ruby-version: ['2.7']
 
     steps:
     - uses: actions/checkout@v2
@@ -33,5 +33,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Setup spec config
       run: cp spec/config.yml{.sample,}
+    - name: Bundle appraisal
+      run: bundle exec appraisal install
     - name: Run tests
-      run: bundle exec rspec
+      run: bundle exec appraisal rspec

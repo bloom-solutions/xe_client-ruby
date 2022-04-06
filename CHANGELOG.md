@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- undefined method 'size' for nil when  running with dry-validation 0.13 (allow 0.13 to be installed)
+
 ## [1.1.0] - 2021-06-15
 ### Added
 - Update `dry-validation` to 1.x

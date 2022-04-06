@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "virtus", "~> 1.0"
   spec.add_dependency "httparty"
   spec.add_dependency "api_client_base", "~> 1.9"
-  spec.add_dependency "dry-validation", "~> 1.0", "< 2"
+  spec.add_dependency "dry-validation", ">= 0.13", "< 2"
   spec.add_dependency "typhoeus", "~> 1.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
@@ -40,4 +40,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "shoulda-matchers", "~> 3.0"
   spec.add_development_dependency "vcr", "~> 3.0"
   spec.add_development_dependency "webmock", "~> 2.0"
+  spec.add_development_dependency "appraisal"
 end
